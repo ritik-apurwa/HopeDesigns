@@ -2,26 +2,285 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.app-body{
+  @apply max-w-7xl w-screen mx-auto min-h-screen h-screen
+}
+.app-parent{
+  @apply flex  flex-col  my-Box  overflow-y-hidden h-full items-center  w-screen max-w-7xl mx-auto
+}
+.app-child{
+  @apply flex flex-col px-1 my-Box  overflow-y-auto w-screen max-w-7xl overflow-x-hidden pt-[50px]
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.nav{
+  @apply w-full flex flex-row justify-between fixed top-0   my-Box h-12 items-center z-50  border-black border-b-[1px] bg-white px-1
+}
+.nav-menu{
+  @apply md:flex flex-row  gap-x-3 h-12 px-6 items-center hidden
+}
+
+.nav-links{
+  @apply flex flex-row-reverse text-black gap-x-2 items-center 
+}
+.nav-links-text{
+ @apply font-semibold flex h-full items-center  text-base
+}
+.nav-links-icon{
+@apply w-[20px]  h-[20px]  flex items-center  
+}
+.toggle-btn{
+@apply flex h-12 w-12 mx-1 items-center justify-center
+}
+
+.sidebar-content{
+  @apply flex flex-col my-Box w-[full] right-0  h-fit bg-white text-black top-12 fixed z-50 pt-1 
+}
+.sidebar-menu-links{
+  @apply flex flex-row justify-between border h-10 shadow-sm px-4 md:px-[4px] gap-x-[8px] md:font-semibold  md:text-[15px] items-center md:flex-row-reverse md:shadow-none md:border-none
+}
+.icons-logos{
+  @apply flex justify-between flex-row-reverse gap-x-4 items-center font-bold
+}
+
+.home-div{
+  @apply flex flex-col h-screen w-full  my-Box mx-auto  gap-y-8 
+}
+
+.home-image-wrapper{
+  @apply h-[30lvh] min-h-[35vh] my-Box  w-full  md:h-[70vh%] md:min-h-[100vh] md:w-full flex relative 
+ }
+.home-image-wrapper-img{
+  @apply absolute px-3  object-center
+ }
+ .homepage-text-box{
+  @apply flex-1 px-2
+ }
+.Heading{
+  @apply flex w-full h-fit text-4xl  pt-2 pb-6 text-blue-900 font-[php-bold] font-extrabold
+}
+.slogan{
+  @apply flex font-[kalam-bold] font-extrabold text-lg 
+}
+
+.my-Box {
+  width: 100%;
+  max-width: 1280px;
+}
+
+/* For viewport width up to 100px */
+@media (min-width: 0px) and (max-width: 100px) {
+  .my-Box {
+    max-width: 100px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* For viewport width from 101px to 200px */
+@media (min-width: 101px) and (max-width: 200px) {
+  .my-Box {
+    max-width: 200px;
+  }
 }
+@media (min-width: 101px) and (max-width: 200px) {
+  .my-Box {
+    max-width: 200px;
+  }
+}
+@media (min-width: 201px) and (max-width: 300px) {
+  .my-Box {
+    max-width: 300px;
+  }
+}
+@media (min-width: 301px) and (max-width: 400px) {
+  .my-Box {
+    max-width: 400px;
+  }
+}
+@media (min-width: 401px) and (max-width: 410px) {
+  .my-Box {
+    max-width: 410px;
+  }
+}
+@media (min-width: 411px) and (max-width: 420px) {
+  .my-Box {
+    max-width: 420px;
+  }
+}
+@media (min-width: 421px) and (max-width: 430px) {
+  .my-Box {
+    max-width: 430px;
+  }
+}
+@media (min-width: 431px) and (max-width: 440px) {
+  .my-Box {
+    max-width: 440px;
+  }
+}
+@media (min-width: 441px) and (max-width: 450px) {
+  .my-Box {
+    max-width: 450px;
+  }
+}
+@media (min-width: 451px) and (max-width: 460px) {
+  .my-Box {
+    max-width: 460px;
+  }
+}
+@media (min-width: 461px) and (max-width: 470px) {
+  .my-Box {
+    max-width: 470px;
+  }
+}
+
+@media (min-width: 471px) and (max-width: 480px) {
+  .my-Box {
+    max-width: 480px;
+  }
+}
+@media (min-width: 481px) and (max-width: 490px) {
+  .my-Box {
+    max-width: 490px;
+  }
+}
+@media (min-width: 491px) and (max-width: 500px) {
+  .my-Box {
+    max-width: 500px;
+  }
+}
+@media (min-width: 501px) and (max-width: 600px) {
+  .my-Box {
+    max-width: 600px;
+  }
+}
+@media (min-width: 601px) and (max-width: 700px) {
+  .my-Box {
+    max-width: 700px;
+  }
+}
+@media (min-width: 701px) and (max-width: 800px) {
+  .my-Box {
+    max-width: 800px;
+  }
+}
+@media (min-width: 801px) and (max-width: 900px) {
+  .my-Box {
+    max-width: 900px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1000px) {
+  .my-Box {
+    max-width: 1000px;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1100px) {
+  .my-Box {
+    max-width: 1100px;
+  }
+}
+@media (min-width: 1101px) and (max-width: 1200px) {
+  .my-Box {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1280px) {
+  .my-Box {
+    max-width: 1280px;
+  }
+}
+
+
+
+
+
+
+@font-face {
+  font-family: 'cvt-var';
+  src: url('/fonts/cvt/cvt-mid.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'etb-var';
+  src: url('/fonts/etb/etb-mid.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'exo-var';
+  src: url('/fonts/exo/exo-var.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'exo2-var';
+  src: url('/fonts/exo2/exo2-var.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'kalam-bold';
+  src: url('/fonts/kalam/kalam-bold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'kalam-reg';
+  src: url('/fonts/kalam/kalam-reg.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'kalam-thin';
+  src: url('/fonts/kalam/kalam-thin.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'php-reg';
+  src: url('/fonts/php/php-reg.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'php-bold';
+  src: url('/fonts/php/php-bold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'orb-var';
+  src: url('/fonts/orb/orb-var.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rbt-bold';
+  src: url('/fonts/rbt/rbt-bold.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rbt-mid';
+  src: url('/fonts/rbt/rbt-mid.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rbt-reg';
+  src: url('/fonts/rbt/rbt-reg.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'yi-var';
+  src: url('/fonts/yi/yi-var.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+
