@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import path from "next/navigation";
 import Link from "next/link";
-import { Logo } from "@/components/new/2Server_Components";
 import Navbar from "@/components/fix/Navbar";
 
 export const metadata: Metadata = {
