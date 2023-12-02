@@ -17,7 +17,7 @@ const NavMenu = () => {
             <RiHome4Line size="20" />{" "}
           </span>
         </Link>
-        <Link href="/Family" className="sidebar-menu-links">
+        <Link href="/MainRoutes/Family" className="sidebar-menu-links">
           <span>Family</span>
           <span>
             <RiGroup2Fill size="20" />

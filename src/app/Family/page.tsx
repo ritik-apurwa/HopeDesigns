@@ -1,11 +1,11 @@
-"use client"
-import React from 'react'
-import {motion} from "framer-motion"
 
+import React from 'react'
 const page = () => {
   return (
-      <section className='h-screen my-Box' >
-      </section>
+   <main className='mt-48 h-screen my-Box'>
+    
+   
+   </main>
   )
 }
 

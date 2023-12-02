@@ -28,11 +28,11 @@ const Sidebar = () => {
     <section>
       {isOpen ? (
         <button onClick={toggleSidebar} className="toggle-btn">
-          <AiOutlineClose size="24" />
+          <AiOutlineClose size="18" />
         </button>
       ) : (
         <button onClick={toggleSidebar} className="toggle-btn">
-          <AiOutlineMenu className="toggle-icon" size="24" />
+          <AiOutlineMenu className="toggle-icon" size="18" />
         </button>
       )}
     </section>
@@ -159,6 +159,7 @@ const Sidebar = () => {
             </Link>
            
           </motion.div>
+
         </motion.div>
       )}
     </AnimatePresence>
