@@ -6,16 +6,12 @@ import { MdLocalMovies } from "react-icons/md"
 import { CiMusicNote1 } from "react-icons/ci"
 import {SlSocialSteam} from "react-icons/sl"
 import {LiaInfoSolid} from "react-icons/lia"
-import Sidebar from "../fix/Sidebar"
 
-const Navbar = () => {
+
+const NavMenu = () => {
   return (
-    <nav className='my-Box nav ' >
-        <section>
-            <h1 className="font-bold tracking-wider text-lg text-gray-900 font-[orb-var] " ><span className='text-red-600'>H</span>ope<span className='text-red-600'>D</span>esings</h1>
-        </section>
-        <section className='nav-menu' >
-        <Link href="/" className="sidebar-menu-links">
+    <main className='nav-menu' >
+         <Link href="/" className="sidebar-menu-links">
           <span>Home</span>
           <span>
             <RiHome4Line size="20" />{" "}
@@ -57,12 +53,8 @@ const Navbar = () => {
             <LiaInfoSolid size="20" />
           </span>
         </Link>
-        </section>
-        <section>
-            <Sidebar/>
-        </section>
-    </nav>
+    </main>
   )
 }
 
-export default Navbar
+export default NavMenu

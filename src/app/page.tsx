@@ -16,20 +16,17 @@ export default function Home() {
           />
         </main>
 
-        <main className="homepage-text-box relative   ">
-          <h1 className="Heading">
+        <main className="homepage-text-box  ">
+          <h1 className="Heading md:hidden ">
             Create a <br /> Compelling and <br /> Engaging Website
           </h1>
           <p className="slogan">
-            Welcome to my website! Get ready to explore different aspects of my
+           "Welcome to my website! Get ready to explore different aspects of my
             life through an enticing website. From my home to my favorite
             movies, music, and more, each page is a unique narrative that
-            invites you to connect with my world.
+            invites you to connect with my world."
           </p>
         </main>
-      </section>
-      <section className="bg-red-400 w-full my-Box h-16 " >
-      hlo
       </section>
     </main>
   );

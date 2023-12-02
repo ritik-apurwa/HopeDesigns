@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import path from "next/navigation";
 import Link from "next/link";
-import Navbar from "@/components/fix/Navbar";
+import Navbar from "@/components/nav-comps/Navbar";
 
 export const metadata: Metadata = {
   title: "HopeDesigns",
@@ -20,7 +20,6 @@ export default function RootLayout({
         <main className="app-parent">
             <Navbar/>
           <main className="app-child">{children}</main>
-      
         </main>
       </body>
     </html>

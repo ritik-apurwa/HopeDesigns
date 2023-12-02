@@ -12,14 +12,12 @@
 .app-child{
   @apply flex flex-col px-1 my-Box  overflow-y-auto w-screen max-w-7xl overflow-x-hidden pt-[50px]
 }
-
 .nav{
   @apply w-full flex flex-row justify-between fixed top-0   my-Box h-12 items-center z-50  border-black border-b-[1px] bg-white px-1
 }
 .nav-menu{
-  @apply md:flex flex-row  gap-x-3 h-12 px-6 items-center hidden
+  @apply lg:flex lg:flex-row  gap-x-3 h-12 px-6 items-center hidden
 }
-
 .nav-links{
   @apply flex flex-row-reverse text-black gap-x-2 items-center 
 }
@@ -32,21 +30,18 @@
 .toggle-btn{
 @apply flex h-12 w-12 mx-1 items-center justify-center
 }
-
 .sidebar-content{
   @apply flex flex-col my-Box w-[full] right-0  h-fit bg-white text-black top-12 fixed z-50 pt-1 
 }
 .sidebar-menu-links{
-  @apply flex flex-row justify-between border h-10 shadow-sm px-4 md:px-[4px] gap-x-[8px] md:font-semibold  md:text-[15px] items-center md:flex-row-reverse md:shadow-none md:border-none
+  @apply flex flex-row justify-between border h-10 shadow-sm px-4 md:px-[4px] gap-x-[8px] md:font-semibold  md:text-[15px] items-center lg:flex-row-reverse lg:shadow-none lg:border-none
 }
 .icons-logos{
   @apply flex justify-between flex-row-reverse gap-x-4 items-center font-bold
 }
-
 .home-div{
   @apply flex flex-col h-screen w-full  my-Box mx-auto  gap-y-8 
 }
-
 .home-image-wrapper{
   @apply h-[30lvh] min-h-[35vh] my-Box  w-full  md:h-[70vh%] md:min-h-[100vh] md:w-full flex relative 
  }
@@ -54,28 +49,160 @@
   @apply absolute px-3  object-center
  }
  .homepage-text-box{
-  @apply flex-1 px-2
+  @apply flex-1 px-2 relative
  }
 .Heading{
-  @apply flex w-full h-fit text-4xl  pt-2 pb-6 text-blue-900 font-[php-bold] font-extrabold
+  @apply flex w-full h-fit text-4xl  pt-2 pb-2 text-blue-950 font-[php-bold] font-extrabold
 }
 .slogan{
-  @apply flex font-[kalam-bold] font-extrabold text-lg 
+  @apply flex from-neutral-950 font-extrabold text-base italic 
 }
-
 .my-Box {
   width: 100%;
   max-width: 1280px;
 }
 
-/* For viewport width up to 100px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 0px) and (max-width: 100px) {
   .my-Box {
     max-width: 100px;
   }
 }
-
-/* For viewport width from 101px to 200px */
 @media (min-width: 101px) and (max-width: 200px) {
   .my-Box {
     max-width: 200px;
@@ -131,7 +258,6 @@
     max-width: 470px;
   }
 }
-
 @media (min-width: 471px) and (max-width: 480px) {
   .my-Box {
     max-width: 480px;
@@ -187,26 +313,18 @@
     max-width: 1280px;
   }
 }
-
-
-
-
-
-
 @font-face {
   font-family: 'cvt-var';
   src: url('/fonts/cvt/cvt-mid.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'etb-var';
   src: url('/fonts/etb/etb-mid.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'exo-var';
   src: url('/fonts/exo/exo-var.ttf') format('truetype');
@@ -249,7 +367,6 @@
   font-weight: 900;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'orb-var';
   src: url('/fonts/orb/orb-var.ttf') format('truetype');
