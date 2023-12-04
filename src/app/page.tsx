@@ -20,111 +20,94 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-grid-container">
-        <Link
-          href="/"
-          className="section-grid-link"
-        >
-          <Image
-            src="/images/bg/family.jpg"
-            height={600}
-            width={800}
-            alt="icon"
-            className="section-grid-link-img "
-          />
-          <span className="section-grid-link-img-tag ">
-            Family
-          </span>
+      <section className="hero-grid">
+        <Link href="/Family" className="hero-link">
+          <div className="hero-div">
+            <Image
+              src="/images/hero-img/hero-family-2.jpg"
+              fill
+              alt="hero-images"
+              className="hero-img"
+            />
+          </div>
+          <span className="hero-span relative ">Family</span>
         </Link>
-        <Link
-          href="/"
-          className="section-grid-link"
-        >
-          <Image
-            src="/images/bg/Friends.jpg"
-            height={600}
-            width={800}
-            alt="icon"
-            className="section-grid-link-img "
-          />
-          <span className="section-grid-link-img-tag ">
-            Friends
-          </span>
+        <Link href="/Friends" className="hero-link">
+          <div className="hero-div">
+            <Image
+              src="/images/hero-img/hero-friends-2.jpg"
+              fill
+              alt="hero-images"
+              className="hero-img"
+            />
+          </div>
+          <span className="hero-span  ">Friends</span>
         </Link>
-        <Link
-          href="/"
-          className="section-grid-link"
-        >
-          <Image
-            src="/images/bg/games.jpg"
-            height={600}
-            width={800}
-            alt="icon"
-            className="section-grid-link-img "
-          />
-          <span className="section-grid-link-img-tag ">
-            Games
-          </span>
+        <Link href="/Journey" className="hero-link">
+          <div className="hero-div">
+            <Image
+              src="/images/hero-img/hero-journey.jpg"
+              fill
+              alt="hero-images"
+              className="hero-img"
+            />
+          </div>
+          <span className="hero-span  ">Journey</span>
         </Link>
-        <Link
-          href="/"
-          className="section-grid-link"
-        >
-          <Image
-            src="/images/bg/cinema.jpg"
-            height={600}
-            width={800}
-            alt="icon"
-            className="section-grid-link-img "
-          />
-          <span className="section-grid-link-img-tag ">
-            Movies
-          </span>
+        <Link href="/Movies" className="hero-link">
+          <div className="hero-div">
+            <Image
+              src="/images/hero-img/hero-movies.jpg"
+              fill
+              alt="hero-images"
+              className="hero-img"
+            />
+          </div>
+          <span className="hero-span ">Movies</span>
         </Link>
-        <Link
-          href="/"
-          className="section-grid-link"
-        >
-          <Image
-            src="/images/bg/hh.jpg"
-            height={600}
-            width={800}
-            alt="icon"
-            className="section-grid-link-img "
-          />
-          <span className="section-grid-link-img-tag ">
-            About Me
-          </span>
+        <Link href="/Music" className="hero-link">
+          <div className="hero-div">
+            <Image
+              src="/images/hero-img/hero-music.jpg"
+              fill
+              alt="hero-images"
+              className="hero-img"
+            />
+          </div>
+          <span className="hero-span  ">Music</span>
         </Link>
-        <Link
-          href="/"
-          className="section-grid-link"
-        >
-          <Image
-            src="/images/bg/movies.jpg"
-            height={600}
-            width={800}
-            alt="icon"
-            className="section-grid-link-img "
-          />
-          <span className="section-grid-link-img-tag ">
-            Social
-          </span>
+        <Link href="/Social" className="hero-link">
+          <div className="hero-div">
+            <Image
+              src="/images/hero-img/hero-social.jpg"
+              fill
+              alt="hero-images"
+              className="hero-img"
+            />
+          </div>
+          <span className="hero-span  ">Social</span>
         </Link>
-        <Link
-          href="/"
-          className="section-grid-link"
-        >
-          <Image
-            src="/images/bg/homepage.jpg"
-            height={600}
-            width={800}
-            alt="icon"
-            className="section-grid-link-img "
-          />
-          <span className="section-grid-link-img-tag ">
-            Music
-          </span>
+        <Link href="/VideoGames" className="hero-link">
+          <div className="hero-div">
+            <Image
+              src="/images/hero-img/hero-games.jpg"
+              fill
+              alt="hero-images"
+              className="hero-img"
+            />
+          </div>
+          <span className="hero-span  ">VideoGames</span>
+        </Link>
+        <Link href="/More" className="hero-link">
+          <div className="hero-div">
+            <Image
+              src="/images/hero-img/hero-more.jpg"
+              fill
+              alt="hero-images"
+              className="hero-img"
+            />
+          </div>
+          <span className="hero-span  ">More</span>
         </Link>
       </section>
     </main>
