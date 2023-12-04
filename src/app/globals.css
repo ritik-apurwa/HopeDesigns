@@ -39,7 +39,19 @@
 .icons-logos{
   @apply flex justify-between flex-row-reverse gap-x-4 items-center font-bold
 }
-.hero-grid{
+#home-s1{
+  @apply flex flex-col md:flex-col-reverse gap-y-4 lg:flex-row  my-Box  
+}
+.home-s1-parent-div{
+  @apply h-[30%] w-full md:h-[40%] flex flex-col gap-y-2 lg:w-[50%]  
+}
+.home-s1-child-div{
+  @apply my-Box mx-3 p-4 font-[orb-var] text-blue-950 leading-[125%] md:leading-[110%]  flex flex-col  my-Box text-[40px]  md:text-[50px] lg:text-xl font-bold  
+}
+.home-s1-p{
+  @apply bg-neutral-100 p-6 md:p-12 lg:p-16 mx-2 text-blue-950 font-semibold font-[orb-var] text-[100%] leading-7 tracking-wider rounded-3xl   
+}
+#hero-grid{
   @apply flex h-fit my-Box  overflow-y-auto p-4 absolute flex-wrap gap-x-4 gap-y-4 
 }
 .hero-link{

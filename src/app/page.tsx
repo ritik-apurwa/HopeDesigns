@@ -4,14 +4,14 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <section className="Home-S1 flex flex-col md:flex-col-reverse gap-y-4 lg:flex-row  my-Box  ">
-        <div className="h-[30%] w-full md:h-[40%] flex flex-col gap-y-2 lg:w-[50%]   ">
-          <div className="my-Box mx-3 p-4 font-[orb-var] text-blue-950 leading-[125%] md:leading-[110%]  flex flex-col  my-Box text-[40px]  md:text-[50px] lg:text-xl font-bold ">
+      <section id="home-s1">
+        <div className="home-s1-parenet-div">
+          <div className="home-s1-child-div">
             <span>Create a</span>
             <span>Compelling and</span>
             <span>Engaging Website</span>
           </div>
-          <p className="bg-neutral-100 p-6 md:p-12 lg:p-16 mx-2 text-blue-950 font-semibold font-[orb-var] text-[100%] leading-7 tracking-wider rounded-3xl  ">
+          <p className="home-s1-p">
             " Welcome to my website! Get ready to explore different aspects of
             my life through an enticing website. From my home to my favorite
             movies, music, and more, each page is a unique narrative that
@@ -20,7 +20,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="hero-grid">
+      <section id="hero-grid">
         <Link href="/Family" className="hero-link">
           <div className="hero-div">
             <Image
@@ -110,6 +110,7 @@ export default function Home() {
           <span className="hero-span  ">More</span>
         </Link>
       </section>
+
     </main>
   );
 }
